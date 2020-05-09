@@ -13,7 +13,7 @@ def writeCSV2(pasta, quantidadeImagens, predicao):
     for i in range(1, quantidadeImagens+1):
         a2 = []
         a2.append(str(predicao))
-        img = image.load_img(f'{pasta} ({i}).png', target_size= (128, 128))
+        img = image.load_img(f'{pasta} ({i}).jpg', target_size= (128, 128))
         img = np.array(img)
         img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
         img = img.ravel()
@@ -26,7 +26,7 @@ def writeCSV(pasta, quantidadeImagens, predicao):
     for i in range(1, quantidadeImagens+1):
         a2 = []
         a2.append(str(predicao))
-        img = image.load_img(f'{pasta}{i}.png', target_size= (128, 128))
+        img = image.load_img(f'{pasta} ({i}).png', target_size= (128, 128))
         img = np.array(img)
         img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
         img = img.ravel()
