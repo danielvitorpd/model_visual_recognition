@@ -1,5 +1,7 @@
-relatorio.csv
+src/relatorio.csv
 
-teste.csv
+src/teste.csv
 
-machinelearning.joblib
+src/machinelearning.joblib
+
+.vscode
