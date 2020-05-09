@@ -15,10 +15,10 @@ from keras.models import Sequential
 from keras.layers import Dense, Conv2D, MaxPooling2D, Flatten, Dropout
 from keras.utils import to_categorical
 
-train = pd.read_csv('relatorio.csv')
-test = pd.read_csv('teste.csv')
+train = pd.read_csv('relatorio.csv') #dataset train
+test = pd.read_csv('teste.csv') #dataset test
 
-train = np.random.shuffle(train)
+train = np.random.shuffle(train) 
 labels = train['label'].values
 unique_val = np.array(labels)
 np.unique(unique_val)
