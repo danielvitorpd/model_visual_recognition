@@ -45,8 +45,8 @@ with open('test.csv', 'w', newline='') as file:
 linhas.append(a1)
 
 
-writeCSV2('maoAberta/maoaberta',39, 0)
-writeCSV2('maoFechada/maofechada', 47, 1)
+writeCSV('maoAberta/maoaberta',39, 0)
+writeCSV('maoFechada/maofechada', 47, 1)
 with open('test.csv', 'w', newline='') as file:
     writer = csv.writer(file, quoting=csv.QUOTE_NONE, delimiter=',')
     for row in linhas:
